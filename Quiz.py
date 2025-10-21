@@ -1,50 +1,84 @@
-# def greetings(name):
-#     print("hello " + name)
-
-# input_str = input("Enter your name: ")
-# greetings(input_str)
-
-question = ["What is the capital of France?\n(a) Berlin\n(b) Madrid\n(c) Paris\n(d) Rome\n",
-            "What is 2 + 2?\n(a) 3\n(b) 4\n(c) 5\n(d) 6\n",
-            "What is the largest planet in our solar system?\n(a) Earth\n(b) Mars\n(c) Jupiter\n(d) Saturn\n"]
 
 
-print(question[0])
+
+input_name = input("Enter your name: ")
+input_age = input("Enter your age:" )
+input_sex = input("Are you a male or a female")
 
 
-ipunt_srt = input("your awnser is: ")
+def greetings(name):
+    print("Hello " + name)
 
-if ipunt_srt.lower() == 'c':
-    print("Correct!")
-else:
-    print("incorect, the correct awser is (c) Paris.")
-    SystemExit
+def age(age):
+    print("Your age is", age)
+
+def sex(sex):
+
+    
+    if input_sex == "male": 
+        print("You are a ", input_sex )
+    elif input_sex == "female": 
+        print("You are a ", input_sex)
+    else: 
+        print("You did no enter you proper gender")
+    
+        SystemExit
+    
+
+greetings(input_name)
+age(input_age)
+sex(input_sex)
+
+print("Test useless crap print(Test useless crap) print(Test useless crap) print(Test useless crap) print(Test useless crap)")
 
 
-print("\n", question[1])
-
-ipunt2 = input("your awnser is: ")
 
 
-if ipunt2.lower() == "b":
-    print("Correct!")
-elif ipunt2 == 4: 
-    print("While this this is true, we please advise you to use the given options to respond to our questions accordingly sur as : a b c and d")
-else:
-    print("False")
-    SystemExit
 
 
-print(question[2])
+# 'Quiz'
 
-input4 = input("you awnser is: ")
+# question = ["What is the capital of France?\n(a) Berlin\n(b) Madrid\n(c) Paris\n(d) Rome\n",
+#             "What is 2 + 2?\n(a) 3\n(b) 4\n(c) 5\n(d) 6\n",
+#             "What is the largest planet in our solar system?\n(a) Earth\n(b) Mars\n(c) Jupiter\n(d) Saturn\n"]
 
-if input4 == 'c':
-    print("Congratulations, thats right, you have  completed the quiz!")
-else:
-    print("You awser is ", input4,
-          "That is false, the correct awnser was c. Good luck next time")
-    SystemExit
+
+# print(question[0])
+
+
+# ipunt_srt = input("your awnser is: ")
+
+# if ipunt_srt.lower() == 'c':
+#     print("Correct!")
+# else:
+#     print("incorect, the correct awser is (c) Paris.")
+#     SystemExit
+
+
+# print("\n", question[1])
+
+# ipunt2 = input("your awnser is: ")
+
+
+# if ipunt2.lower() == "b":
+#     print("Correct!")
+# elif ipunt2 == 4: 
+#     print("While this this is true, we please advise you to use the given options to respond to our questions accordingly sur as : a b c and d")
+# else:
+#     print("False")
+#     SystemExit
+
+
+# print(question[2])
+
+# input4 = input("you awnser is: ")
+
+# if input4 == 'c':
+#     print("Congratulations, thats right, you have  completed the quiz!")
+# else:
+#     print("You awser is ", input4,
+#           "That is false, the correct awnser was c. Good luck next time")
+#     SystemExit
 
 
 # awnser = input(question[0])
