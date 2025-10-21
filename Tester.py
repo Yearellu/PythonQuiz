@@ -7,24 +7,22 @@ def intro():
 
     print("\n")
 
-    if input_sex != "female" and input_sex != "male" :
+    if input_sex != "female" and input_sex != "male":
         SystemExit
 
     def greetings(name):
         print("Hello " + name)
-        
 
     def age(age):
         print("Your age is", age)
-        
 
     def sex(sex):
         if input_sex == "male":
             print("You are a", input_sex)
-            
+
         elif input_sex == "female":
             print("You are a", input_sex)
-            
+
         else:
             print("You did not enter your proper gender")
             SystemExit
@@ -38,4 +36,3 @@ def intro():
 
     list = [input_name, input_age, input_sex]
     print(list)
-
